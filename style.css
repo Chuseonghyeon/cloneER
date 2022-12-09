@@ -1,0 +1,497 @@
+* { /*reset.css = 찾아보세요*/  /*각 브라우저마다 설정 되어있는 기본 스타일이 다 다르다. 이러한 점을 개선하기 위해 CSS를 작성할 때, 초기화를 시킨다. 기본적으로 태그가 가지고 있는 간격이나 색상 등을 통일 시키는 작업이다.*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; 
+}
+
+.wrapper {
+    width: 1440px; /*min-width , max-width 여부 고민*/
+    margin: 0 auto;
+}
+
+header { 
+    display: flex;
+    width: 100%;
+    background-color: #000000;
+    height: 60px;
+    position: relative;
+    /*display 와 position 의 차이*/ /*display는 해당 객체를 브라우저 화면에 ‘어떤 형태로 배치할 것인가’를 표현합니다. position속성은 해당 객체를 ‘배치할 기준’을 설정할 수 있습니다.*/
+}
+
+header .logo {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.menu {
+    width: 1000px;
+    z-index: 1; /*9, 999 = 9 를 쓰는 이유*/ /*찾아 보아도 잘 모르겠지만 아마 다른 숫자를 쓰면 했갈리니까 가장 큰숫자인 9와 작은숫자인 1만 사용할것 같다.*/
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.menu a {
+    color: #ffffff;
+}
+
+.menu ul {
+    color: #017cb1;
+}
+
+.menu > ul {
+    display: flex;
+}
+
+.menu > ul > li {
+    width: 100px;
+}
+
+.menu > ul > li > ul {
+    font-size: 15px;
+    display: none;
+    text-align: left;
+    position: relative;
+}
+
+.menu > ul > li:hover ul {
+    display: block;
+}
+
+.menu > ul > li > ul > li {
+    width: 200px;
+    background-color: #000000;
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.menu > ul > li > ul > li > a {
+    display: block;
+}
+
+.button-div button {
+    border: none;
+    width: 200px;
+    height: 100%;
+    background-color: #ffd000;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    font-weight: 700; 
+}
+
+header .logo a::after {
+    content: "";
+    width: 1px;
+    height: 35px;
+    background-color: #999999;
+    display: inline-block;
+    margin-left: 10px;
+    margin-left: 20px;
+}
+
+.lang {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: #212030;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+}
+
+.lang i {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.main {
+    position: relative;
+    height: 810px;
+}
+
+.main .video-area {
+    position: absolute;
+    z-index: -99;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main .video-area video {
+    width: 100%;
+}
+
+.main .content {
+    width: 100%;
+    height: 100%; /* px ,rem , em , % 이런 단위의 차이 */ /*px은 우리가 알고 있는 픽셀값입니다. %는 사용자가 보이는 화면에서 차지하는 비중입니다. em단위는 em단위가 있는 곳의 폰트사이즈의 배수입니다. rem단위는 문서의 기본값의 배수입니다.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/bg-index-about-gradation.png); /* 절대경로, 상대경로 ./imgs /imgs imgs */
+    background-size: cover;
+}
+
+.main #play-button {
+    border: none;
+    background-color: transparent;
+    background-image: url(imgs/btn-yellow-point.svg);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 64px;
+    font-size: 25px;
+    font-weight: 650; /* 단위가 없는 이유 */ 
+    margin-top: 50px;
+}
+
+.main .platform {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+    margin-top: 50px;
+}
+
+.main .platform img {
+    height: 56px;
+}
+
+.news-container {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.news-container .news {
+    margin: 0 auto; /* [option] auto 의 의미 */ 
+    width: 1100px;
+    height: 550px;
+    padding-top: 60px;
+}
+
+.news-container .news a {
+    color: #ffffff;
+}
+
+.news-container .news-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.news-container .contents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.news-container .contents .item {
+    width: 367px;
+    height: 337px;
+    margin: 0 15px; /* 줄일수 있으면 줄여주세요 :) 완료*/
+}
+
+.news-container .contents .item:first-child {
+    margin-left: 0;
+}
+
+.news-container .contents .item:last-child {
+    margin-right: 0;
+}
+
+.news-container .contents .item .img-area img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-container .contents .item .info h3 {
+    padding: 20px 0;
+}
+
+.fa-arrow-right{
+    color: #ffd000;
+}
+
+.news-container .contents .item .info p {
+    color: #97b5c3;
+}
+
+.game-info{
+    position: relative;
+    height: 810px;
+}
+
+.game-info .video-area {
+    position: absolute;
+    z-index: -99;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.game-info .video-area .intro-video {
+    width: 100%;
+}
+
+.game-info .contants {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(imgs/bg-index-about-gradation.png);
+    background-size: cover;
+}
+
+.game-info .contants h1 {
+    color: #ffffff;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.game-info .contants h1 b {
+    color: #ffd000;
+}
+
+.game-info .item {
+    color: #999999;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.game-info .item b {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.game-info .emphasis {
+    color: #ffd000;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.game-info #er-button {
+    display: block;
+    color: #000000;
+    background-image: url(imgs/btn-yellow-point.svg);
+    width: 250px;
+    height: 64px;
+    font-size: 25px;
+    line-height: 64px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.banner {
+    background-image: url(imgs/bg-play-er.jpeg);
+    width: 100%;
+    height: 940px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner::after {
+    content: "";
+    width: 100%;
+    height: 472px;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("imgs/img-play-er.png");
+    margin-bottom: -200px;
+}
+
+.banner .container {
+    color: #ffffff;
+    width: 70%;
+}
+
+.banner .top-text {
+    line-height: 40px;
+}
+
+.banner h1 {
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.banner h1 b {
+    color: #ffd000;
+}
+
+.banner .platform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.banner .platform .item {
+    display: inline-block;
+    width: 250px;
+    height: 85px;
+    background-color: #0a0d14;
+    margin: 0 15px;
+    border: 1px solid #384761;
+    border-radius: 8px;
+}
+
+.banner .platform .item a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .platform .steam:hover {
+    background-color: #02aeef;
+    border-color: #02aeef;
+}
+
+.banner .platform .microsoft:hover {
+    background-color: #0c9d11;
+    border-color: #0c9d11;
+}
+
+.banner .platform .kakao:hover {
+    background-color: #ffd000;
+    border-color: #ffd000;
+}
+
+.banner .precautions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    color: #999999;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/bg-social.png);
+    background-color: #0e0e0f;
+    width: 100%;
+    height: 200px;
+}
+
+.social h2 {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.social .container ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.social .container ul li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202632;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    font-size: 25px;
+}
+
+.social .container ul li:hover .fa-brands {
+    color: #ffffff;
+}
+
+.social .container .fa-brands {
+    color: #999999;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    width: 700px;
+    align-items: center;
+}
+
+footer .logo {
+    margin-right: 15px;
+}
+
+footer .copy ,footer .copy a {
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+footer .level {
+    margin-top: 30px;
+    display: flex;
+    width: 700px;
+}
+
+footer .desc .table {
+    border: 1px solid #000000;
+    border-spacing: 1px;
+    font-size: 11px;
+    margin-left: 20px;
+    width: 540px;
+}
+
+footer .desc .table tr {
+    background-color: #ffd000;
+}
+
+footer .desc .table tr td {
+    width: 120px;
+    padding: 6px 0;
+    padding-left: 10px;
+}
+
+.fix {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.er-button{
+    background-image: url(imgs/btn-yellow-point-hover.svg);
+}

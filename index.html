@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>erlreturn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5af883ac03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="menu">
+            <div class="logo">  
+                <a href="#"><img src="imgs/logo.png" alt="head-logo" width="110px"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">게임</a>
+                        <ul>
+                            <li><a href="#">이터널 리턴이란?</a></li>
+                            <li><a href="#">실험체</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">새소식</a>
+                        <ul>
+                            <li><a href="#">새소식</a></li>
+                            <li><a href="#">패치노트</a></li>
+                            <li><a href="#">로드맵</a></li>                   
+                        </ul>
+                    </li>
+                    <li><a href="#">ER 패스</a></li>
+                    <li><a href="#">WIKI</a></li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul>
+                            <li>커뮤니티</li>
+                            <li><a href="#">플레이어 검색</a></li>
+                            <li><a href="#">크리에이터 프로그램</a></li>
+                            <li><a href="#">트위치 드롭스</a></li>
+                            <li><a href="#">ER APIs</a></li>
+                            <li><a href="#">팬키트</a></li>
+                            <li>소셜 미디어</li>
+                            <li><a href="#">레딧</a></li>
+                            <li><a href="#">트위터</a></li>
+                            <li><a href="#">패이스북</a></li>
+                            <li><a href="#">유튜브</a></li>
+                            <li><a href="#">트위치</a></li>
+                            <li><a href="#">디스코드</a></li>
+                            <li><a href="#">톡채널</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">통계</a></li>
+                    <li><a href="#">고객지원</a></li>
+                </ul>
+            </div>
+            <div class="lang">
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </div> <!--// 네이밍 컨벤션 = 이름 규칙--> 
+            <div class="button-div"> <!--// 단어는 보통 4개 이상 안쓰길 3~4개--> 
+                <button type="button">지금 플레이하기</button>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="video-area"> <!-- .main-video-area > video-->
+                <video autoplay muted loop playsinline><source src="videos/s7_eng_sound.mp4"></video>
+            </div>
+            <div class="content">
+                    <a href="#"><img src="imgs/biglogo.png" alt="logo"></a> <!-- main > content > logo -->
+
+                    <div class="button-area">
+                    <button id="play-button" type="button" id="er-button" onmouseover="onHoverErButtonMain();" onmouseout="offHoverErButton();">지금 플레이하기</button>
+                    </div>
+
+                    <div class="platform">
+                        <div class="item">
+                            <img src="imgs/logo-kakao-white.svg" alt="kakao">
+                        </div>
+                        <div class="item">
+                            <img src="imgs/logo-steam-white.svg" alt="steam">
+                        </div>
+                        <div class="item">
+                            <img src="imgs/logo-microsoft-white.svg" alt="microsoft">
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <div class="news-container">
+            <div class="news">
+                <div class="news-header">
+                    <h2>최근 소식</h2>
+                    <a href="#"><h2>더 보기 <i class="fa-solid fa-arrow-right"></i></h2></a>
+                </div>
+                    <div class="contents">  
+                        <article class="item">
+                            <a href="#">
+                                <div class="img-area"><img src="imgs/contents-img1.png" alt="news-img" height="196" width="337"></div>
+                                <div class="info">
+                                    <h3>지포스나우 x 이터널리턴 - 한정 스킨과 ER 패스 포인트를 받아가세요.</h3>
+                                    <p>이벤트 기간: 10월 25일(화) 14:00 ~ 11월 20일(일) 23:59</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="item">
+                            <a href="#">
+                                <div class="img-area"><img src="imgs/contents-img2.png" alt="news-img" height="196" width="337"></div>
+                                <div class="info">
+                                    <h3>상점 업데이트 (0.70패치)</h3>
+                                    <p>+ 캐릭터 판매 가격 인하 사전 안내</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="item">
+                            <a href="#">
+                                <div class="img-area"><img src="imgs/contents-img3.png" alt="news-img" height="196" width="337"></div>
+                                <div class="info">
+                                    <h3>2022 Eternal Return Masters Open #9 (Team) 참가 신청 안내</h3>
+                                    <p>10월 24일 (월) ~ 10월 28일 (금) 17:00 (KST)</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+            </div>
+        </div>
+
+        <div class="game-info">
+            <div class="video-area">
+                <video autoplay muted loop playsinline class="intro-video">
+                    <source src="videos/intro.mp4">
+                </video>
+            </div>
+
+            <div class="contants">
+                <h1>Do Whatever It Takes To <b>Survive</b></h1>
+                <p class="item">
+                    세상과는 떨어진 섬 루미아에서, 과학집단 아글라이아가 인간을 대상으로 신인류가 되기 위한 비밀스러운 생존 실험을 벌입니다. 
+                    <br>
+                    생존에 필요한 무기와 방어구를 제작해, <b>17명의 다른 생존자들을 쓰러트리고 마지막까지 살아남아보세요.</b>
+                </p>
+                <p class="emphasis">배틀로얄, MOBA, 서바이벌이 융합된 새로운 형태의 게임입니다.</p>
+                <a href="#" id="er-button" onmouseover="onHoverErButton();" onmouseout="offHoverErButton();">자세히 보기</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="container">
+                <div class="top-text">
+                    <h2>쿼터뷰 형식의 전투 스타일과 배틀로얄</h2>
+                    <h3>독특한 크래프팅 시스템이 합쳐진 "새로운 형태의 서바이벌 MOBA 게임"</h3>
+                </div>
+                <h1><b>이터널 리턴</b>을 플레이해보세요</h1>
+                <div class="platform">
+                    <div class="item kakao" onmouseover="onHoverKakao();" onmouseout="offHoverKakao();">
+                        <a href="#"><img src="imgs/logo-kakao-white.svg" id="kakao" alt="kakao" width="170" height="35"></a>
+                    </div>
+                    <div class="item steam">
+                        <a href="#"><img src="imgs/logo-steam-white.svg" alt="steam" width="170" height="45"></a>
+                    </div>
+                    <div class="item microsoft">
+                        <a href="#"><img src="imgs/logo-microsoft-white.svg" alt="microsoft" width="180" height="35"></a>
+                    </div>
+                </div>
+                <div class="precautions">
+                    <p>*해당 플랫폼의 계정과 플랫폼 구독(별매)이 필요할 수 있습니다. <br>
+                    *지속적인 인터넷 연결이 필요하며 연령 제한이 적용됩니다. 게임 내 구매 상품이 포함되어 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social">
+            <div class="container">
+                <h2>소셜 미디어</h2>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-reddit"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="logo">
+                    <img src="imgs/logo-nimbleneuron.png" alt="nimbleneuronlogo" width="100">
+                </div>
+                <div class="copy">
+                    <p>COPYRIGHT &copy;2020 NIMBLE NEURON CORPORATION. ALL RIGHTS RESERVED. <br>
+                        PARTNERSHIP INQUIRIES: <a href="#">eternalreturn&copy;nimbleneuron.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="level">
+                <div class="iemages-area">
+                    <img src="imgs/footerimg1.png" alt="ageimage">
+                    <img src="imgs/footerimg2.png" alt="dangerimage">
+                </div>
+                <div class="desc">
+                    <table class="table">
+                        <tr>
+                            <td>제명</td>
+                            <td>이터널 리턴</td>
+                            <td>상호</td>
+                            <td>주식회사 님블뉴런</td>
+                        </tr>
+                        <tr>
+                            <td>이용등급</td>
+                            <td>15세 이용가</td>
+                            <td>등급분류번호</td>
+                            <td>GC-CC-NP-191115-003</td>
+                        </tr>
+                        <tr>
+                            <td>등급분류 일자</td>
+                            <td>2019년 11월 15일</td>
+                            <td>제작 배급업 신고번호</td>
+                            <td>제 2013-000005호</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
