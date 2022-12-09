@@ -17,12 +17,12 @@ function navigo (){
 
 function onHoverKakao()
 {
-    $("#kakao").attr('src', 'imgs/logo-kakao-whitegray.svg');
+    $("#kakao").attr('src', 'logo-kakao-whitegray.svg');
 }
 
 function offHoverKakao()
 {
-    $("#kakao").attr('src', 'imgs/logo-kakao-white.svg');
+    $("#kakao").attr('src', 'logo-kakao-white.svg');
 }
 
 function onHoverErButton()

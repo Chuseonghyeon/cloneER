@@ -141,14 +141,14 @@ header .logo a::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(imgs/bg-index-about-gradation.png); /* 절대경로, 상대경로 ./imgs /imgs imgs */
+    background-image: url(bg-index-about-gradation.png); /* 절대경로, 상대경로 ./imgs /imgs imgs */
     background-size: cover;
 }
 
 .main #play-button {
     border: none;
     background-color: transparent;
-    background-image: url(imgs/btn-yellow-point.svg);
+    background-image: url(btn-yellow-point.svg);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -256,7 +256,7 @@ header .logo a::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(imgs/bg-index-about-gradation.png);
+    background-image: url(bg-index-about-gradation.png);
     background-size: cover;
 }
 
@@ -291,7 +291,7 @@ header .logo a::after {
 .game-info #er-button {
     display: block;
     color: #000000;
-    background-image: url(imgs/btn-yellow-point.svg);
+    background-image: url(btn-yellow-point.svg);
     width: 250px;
     height: 64px;
     font-size: 25px;
@@ -301,7 +301,7 @@ header .logo a::after {
 }
 
 .banner {
-    background-image: url(imgs/bg-play-er.jpeg);
+    background-image: url(bg-play-er.jpeg);
     width: 100%;
     height: 940px;
     background-position: 50%;
@@ -321,7 +321,7 @@ header .logo a::after {
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("imgs/img-play-er.png");
+    background-image: url("img-play-er.png");
     margin-bottom: -200px;
 }
 
@@ -399,7 +399,7 @@ header .logo a::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(imgs/bg-social.png);
+    background-image: url(bg-social.png);
     background-color: #0e0e0f;
     width: 100%;
     height: 200px;
@@ -493,5 +493,5 @@ footer .desc .table tr td {
 }
 
 .er-button{
-    background-image: url(imgs/btn-yellow-point-hover.svg);
+    background-image: url(btn-yellow-point-hover.svg);
 }
